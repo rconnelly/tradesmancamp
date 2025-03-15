@@ -28,8 +28,8 @@ export class I18nService {
     this._languageSubject = new BehaviorSubject<string>(localStorage.getItem(languageKey) || environment.defaultLanguage || this._translateService.getBrowserCultureLang() || '');
 
     // Embed languages to avoid extra HTTP requests
-    _translateService.setTranslation('de-DE', deDE);
     _translateService.setTranslation('en-US', enUS);
+    _translateService.setTranslation('de-DE', deDE);
     _translateService.setTranslation('es-ES', esES);
     _translateService.setTranslation('fr-FR', frFR);
     _translateService.setTranslation('it-IT', itIT);
